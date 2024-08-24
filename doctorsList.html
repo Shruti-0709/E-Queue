@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Availability</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            font-family: Times New Roman;
+        }
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+             padding: 20px;
+   
+        }
+
+        .doctor {
+           flex: 0 1 calc(27% - 20px); 
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 30px;
+            margin-left:18px;
+           
+        }
+
+        .doctor img {
+            width: 200px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 10px; 
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+button:hover{
+    cursor: pointer;
+}
+.doctor:hover{
+   background-color: #ddd;
+}
+a{
+    font-size: 15px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   opacity: 0.7;
+   float: right;
+   padding-top: 5px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DOCTOR AVAILABILITY</h1>
+    </header>
+    <main>
+<div class="box">
+
+        <div class="doctor" id="doctor1">
+            <img src="d1.jpg" alt="Doctor 1">
+            <h2>Dr. Olivia</h2>
+            <p>Qualification: MD, PhD</p>
+            <p>Specialization: Cardiology</p>
+            <button onclick="startVideoCall('doctor1')">Start Video Call</button>
+        </div>
+
+      <div class="doctor" id="doctor2">
+            <img src="d2.jpg " alt="Doctor 1">
+            <h2>Dr. John Doe</h2>
+            <p>Qualification: MD, PhD</p>
+            <p>Specialization: Cardiology</p>
+            <button onclick="startVideoCall('doctor1')">Start Video Call</button>
+        </div>
+
+
+     <div class="doctor" id="doctor3">
+            <img src="d3.jpg" alt="Doctor 1">
+            <h2>Dr. Poornima jhoshi</h2>
+            <p>Qualification: MD, PhD</p>
+            <p>Specialization: Cardiology</p>
+            <button onclick="startVideoCall('doctor1')">Start Video Call</button>
+        </div>
+
+
+     <div class="doctor" id="doctor4">
+            <img src="d4.jpg" alt="Doctor 1">
+            <h2>Dr. Vivek Kumar</h2>
+            <p>Qualification: MD, PhD</p>
+            <p>Specialization: Cardiology</p>
+            <button onclick="startVideoCall('doctor1')">Start Video Call</button>
+        </div>
+
+
+     <div class="doctor" id="doctor5">
+            <img src="d5.jpg" alt="Doctor 5">
+            <h2>Dr. Ajit Jaswal</h2>
+            <p>Qualification: MD, PhD</p>
+            <p>Specialization: Cardiology</p>
+            <button onclick="startVideoCall('doctor1')">Start Video Call</button>
+        </div>
+
+
+    <div class="doctor" id="doctor6">
+            <img src="d6.jpg" alt="Doctor 6">
+            <h2>Dr. Anupama Jain</h2>
+            <p>Qualification: MD, PhD</p>
+            <p>Specialization: Cardiology</p>
+            <button onclick="startVideoCall('doctor1')">Start Video Call</button>
+        </div>
+
+       </div>
+    </main>
+    <a href="hospital.html">Back To Home</a>
+    <script>
+        function startVideoCall(doctorId) {
+            
+        }
+    </script>
+</body>
+</html>
+      

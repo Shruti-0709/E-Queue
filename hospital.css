@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+body{
+    background-color: white;
+}
+
+
+
+/*--navigation bar part */
+nav{
+    background-color:rgb(31, 130, 222);
+    height: 50px;
+    display: flex;
+    align-items: center; 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navopt{
+    display: flex;
+    color: white;
+    list-style-type: none;
+   
+}
+.logo{
+    height: 45px;
+    width: 50px;
+}
+li{
+    text-align: center;
+}
+li:nth-child(2){
+    font-size: 1.6em;
+    font-family: 'Playpen Sans', cursive;
+}
+.homeabout{
+    border: 20px;
+    padding: 10px;
+    font-size: large;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+/*for boxes*/
+.facilities{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding-top:25px;
+    }
+    .facility{
+    border-top:25px;
+    display:block;
+    margin:auto;
+    width:400px;
+    padding:20px;
+   
+    }
+    .service{
+    margin:20px;
+    text-align:center;
+    font-size:2em;
+    font-style:System;
+    }
+    .sec-h{
+    margin-left:200px;
+    font-style:System;
+    }
+    /*for text over image*/
+    #chead2{
+
+        margin-top:20px;
+        font-size:3em;
+        font-style:System;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color:rgb(31, 130, 222) ;
+        }
+    .container{
+        position:relative;
+        }
+        .text
+            {  transition: all .3s ease;
+               opacity: 0;
+               background-color:rgb(137, 168, 196);
+          color: white;
+          font-size: 50px;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+        text-align:center;
+        height:250px;
+         width:400px;
+            }
+            .container:hover .text
+            {
+               opacity: 0.8;
+            }

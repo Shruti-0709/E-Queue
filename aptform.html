@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+           /* background-image: url("form.jpg");*/
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            background-color:rgb(31, 130, 222);
+            padding: 20px;
+            border-radius: 10px;
+            width: 800px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            float: left;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            margin-right:20px;
+            box-sizing: border-box;
+           margin-top:10px ;
+            
+        }
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+button:hover{
+    background-color: #2a802c;
+}
+
+    </style>
+    <title>Medical Form</title>
+</head>
+<body>
+
+<div id="page">
+    <form>
+       
+<div> <img src="WhatsApp Image 2024-01-23 at 15.17.15_fb663f8f.jpg" alt="logo here" height="100px" wiidth="100px" style="margin: auto;"></div>
+        <h1>Get an appointment</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter name here" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age here" required>
+
+        <label for="hospital">Hospital Name:</label>
+        <select id="hospital" name="hospital" required>
+            <option value="hospital1">Siddaganga Hospital</option>
+            <option value="hospital2">Vinayaka Hospital </option>
+            <option value="hospital3">Kasturaba Hospital 3</option>
+        </select>
+
+        <label for="doctor">Doctors Available:</label>
+        <select id="doctor" name="doctor" required>
+            <option value="doctor1">Dr. Geetha</option>
+            <option value="doctor2">Dr. Nagraj</option>
+            <option value="doctor3">Dr. Vijay Kumar</option>
+        </select>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" placeholder="Enter phone number" required>
+        <button onclick="openPage()">Submit</button>
+    </form>
+    </div>
+<script>
+function openPage(){
+    window.location.href="afterSubmit.html";
+}
+</script>
+</body>
+</html>
